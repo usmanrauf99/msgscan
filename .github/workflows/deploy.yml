@@ -1,0 +1,61 @@
+name: Deploy Next.js via SSH (password)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Upload and Deploy to VPS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Archive project (excluding node_modules and .git)
+        run: |
+          zip -r deploy.zip . -x "*.git*" "node_modules/*" ".next/*"
+
+      - name: Upload zip and deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            mkdir -p /var/www/nextjs-app
+            rm -rf /var/www/nextjs-app/deploy.zip
+            exit
+      - name: SCP upload
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          source: "deploy.zip"
+          target: "/var/www/nextjs-app"
+
+      - name: SSH unzip and deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            cd /var/www/nextjs-app
+            unzip -o deploy.zip
+            rm deploy.zip
+            
+            pm2 delete nextjs-app || true
+            pm2 save
+            
+            npm install
+            npx next build
+
+            pm2 start "npx next start -p 3000 -H 0.0.0.0" --name nextjs-app || pm2 restart nextjs-app
+            pm2 save
