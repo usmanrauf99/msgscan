@@ -175,7 +175,7 @@ export default function ContactForm() {
 
             {recaptchaError && (
               <p className="text-destructive text-sm">
-                Please verify that you're not a robot
+                Please verify that you are not a robot
               </p>
             )}
 
