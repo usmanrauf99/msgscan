@@ -87,7 +87,10 @@ export function RecentNodes() {
               )}
 
               {validatorsData?.validators.map((validator) => (
-                <div className="flex flex-row gap-1 items-center h-14 border-b px-5 hover:bg-secondary transition-all duration-100">
+                <div
+                  className="flex flex-row gap-1 items-center h-14 border-b px-5 hover:bg-secondary transition-all duration-100"
+                  key={validator.address}
+                >
                   <div className="flex flex-row gap-2 items-center w-2/6">
                     <div className="w-7 h-7 flex items-center justify-center bg-muted rounded-md">
                       <WorkflowIcon className="h-4 w-4 text-muted-foreground" />
