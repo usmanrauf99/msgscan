@@ -16,13 +16,10 @@ export function Hero() {
       <div className="absolute inset-0 dark:bg-black bg-white dark:opacity-80 opacity-85" />
       <Container>
         <div className="relative z-10 text-center">
-          <h1 className="sm:text-4xl text-2xl font-bold mb-4">
-            Explore with <span className="text-primary">Telegraph</span>
+          <h1 className="sm:text-4xl text-2xl font-bold mb-10">
+            The Telegraph Network <span className="text-primary">Explorer</span>
           </h1>
-          <p className="sm:text-lg text-base mb-6 max-w-2xl mx-auto text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+
           <div className="max-w-lg mx-auto relative">
             <AdvancedSearch />
           </div>

@@ -1,4 +1,4 @@
-import { CallToAction } from "@/components/call-to-action";
+// import { CallToAction } from "@/components/call-to-action";
 import { DailyTransactions } from "@/components/daily-transactions";
 import { Stats } from "@/components/stats";
 import { SupportedBlockchains } from "@/components/supported-blockchains";
@@ -10,7 +10,7 @@ export default function AnalyticsPage() {
       <Stats />
       <DailyTransactions />
       <SupportedBlockchains />
-      <CallToAction />
+      {/* <CallToAction /> */}
     </Container>
   );
 }

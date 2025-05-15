@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Telegraph",
+  title: "Msgscan",
   description:
     "Communicate with over 10 blockchains with just a few lines of code",
 };

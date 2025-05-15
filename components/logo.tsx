@@ -6,7 +6,7 @@ export function Logo() {
     <Link href="/" className="text-lg font-semibold">
       <div className="flex items-center gap-2.5">
         <Image src="/logo.svg" alt="Logo" width={30} height={30} />
-        <span>Telegraph</span>
+        <span>Msgscan</span>
       </div>
     </Link>
   );

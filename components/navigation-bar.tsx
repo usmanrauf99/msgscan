@@ -99,9 +99,25 @@ export function NavigationBar() {
           </div>
           <div className="flex-1 justify-end hidden md:flex space-x-3">
             <ModeToggle />
-            <Link href="/contact">
+            <Link href="https://telegraphbridge.com/" target="_blank">
               <Button variant="default" className="md:flex hidden" size="md">
-                Contact
+                Telegraph Home
+              </Button>
+            </Link>
+            <Link
+              href="https://github.com/telegraphbridge/Telegraph"
+              target="_blank"
+            >
+              <Button variant="default" className="md:flex hidden" size="md">
+                Build with Telegraph
+              </Button>
+            </Link>
+            <Link
+              href="https://github.com/telegraphbridge/telegraph-subnet"
+              target="_blank"
+            >
+              <Button variant="default" className="md:flex hidden" size="md">
+                Build with Bittensor
               </Button>
             </Link>
           </div>
