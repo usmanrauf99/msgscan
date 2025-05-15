@@ -7,13 +7,12 @@ interface GoogleReCaptchaProps {
 
 const GoogleReCaptcha: React.FC<GoogleReCaptchaProps> = ({
   onVerify,
-  siteKey = process.env.NEXT_PUBLIC_GOOGLE_SITE_KEY as string, // This is Google's test key
+  siteKey = process.env.NEXT_PUBLIC_GOOGLE_SITE_KEY as string,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const rendered = useRef(false);
 
   useEffect(() => {
-    // Add the Google reCAPTCHA script if it doesn't exist
     if (
       !window.grecaptcha &&
       !document.querySelector("#google-recaptcha-script")
@@ -26,7 +25,6 @@ const GoogleReCaptcha: React.FC<GoogleReCaptchaProps> = ({
       document.body.appendChild(script);
     }
 
-    // Initialize reCAPTCHA when the script is loaded
     const renderReCaptcha = () => {
       if (rendered.current || !containerRef.current) return;
 
@@ -37,7 +35,6 @@ const GoogleReCaptcha: React.FC<GoogleReCaptchaProps> = ({
         });
         rendered.current = true;
       } else {
-        // If grecaptcha is not ready yet, wait and try again
         setTimeout(renderReCaptcha, 100);
       }
     };
@@ -45,12 +42,10 @@ const GoogleReCaptcha: React.FC<GoogleReCaptchaProps> = ({
     if (window.grecaptcha && window.grecaptcha.ready) {
       window.grecaptcha.ready(renderReCaptcha);
     } else {
-      // Add listener for when the script loads
       window.onload = renderReCaptcha;
     }
 
     return () => {
-      // Clean up
       if (window.onload === renderReCaptcha) {
         window.onload = null;
       }
@@ -62,7 +57,6 @@ const GoogleReCaptcha: React.FC<GoogleReCaptchaProps> = ({
 
 export default GoogleReCaptcha;
 
-// Add the necessary type definitions for grecaptcha
 declare global {
   interface Window {
     grecaptcha: {
