@@ -51,7 +51,7 @@ export function NavigationBar() {
   const [open, setOpen] = React.useState(false);
 
   const DesktopMenu = () => (
-    <NavigationMenu className="hidden md:flex">
+    <NavigationMenu className="hidden lg:flex">
       <NavigationMenuList>
         {menuItems.map((item) => (
           <NavigationMenuItem key={item.label}>
@@ -97,8 +97,7 @@ export function NavigationBar() {
           <div className="flex flex-1 justify-center">
             <DesktopMenu />
           </div>
-          <div className="flex-1 justify-end hidden md:flex space-x-3">
-            <ModeToggle />
+          <div className="flex-1 justify-end hidden lg:flex space-x-3">
             <Link href="https://telegraphbridge.com/" target="_blank">
               <Button variant="default" className="md:flex hidden" size="md">
                 Telegraph Home
@@ -120,11 +119,16 @@ export function NavigationBar() {
                 Build with Bittensor
               </Button>
             </Link>
+            <ModeToggle />
           </div>
-          <div className="flex flex-1 justify-end md:hidden">
+          <div className="flex flex-1 justify-end lg:hidden">
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="md:hidden">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="flex lg:hidden"
+                >
                   <Menu />
                 </Button>
               </SheetTrigger>
@@ -169,15 +173,27 @@ export function NavigationBar() {
                     ))}
                   </Accordion>
                 </div>
-                <div className="mt-10 flex flex-row w-full items-center justify-center gap-3 px-6 py-4 md:hidden rounded-md">
+                <div className="mt-10 flex flex-row flex-wrap w-full items-center gap-3 px-6 py-4 lg:hidden rounded-md">
                   <ModeToggle />
-                  <Link href="/contact">
-                    <Button
-                      variant="default"
-                      className="md:hidden flex"
-                      size="md"
-                    >
-                      Contact
+                  <Link href="https://telegraphbridge.com/" target="_blank">
+                    <Button variant="default" className="md:flex" size="md">
+                      Telegraph Home
+                    </Button>
+                  </Link>
+                  <Link
+                    href="https://github.com/telegraphbridge/Telegraph"
+                    target="_blank"
+                  >
+                    <Button variant="default" className="md:flex" size="md">
+                      Build with Telegraph
+                    </Button>
+                  </Link>
+                  <Link
+                    href="https://github.com/telegraphbridge/telegraph-subnet"
+                    target="_blank"
+                  >
+                    <Button variant="default" className="md:flex" size="md">
+                      Build with Bittensor
                     </Button>
                   </Link>
                 </div>

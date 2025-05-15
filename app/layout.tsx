@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { NavigationBar } from "@/components/navigation-bar";
 import { Footer } from "@/components/footer";
 import { Providers } from "./providers";
+import { Toaster } from "sonner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,8 +15,29 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Msgscan",
-  description:
-    "Communicate with over 10 blockchains with just a few lines of code",
+  description: "The Telegraph Network Explorer",
+  openGraph: {
+    title: "Msgscan",
+    description: "The Telegraph Network Explorer",
+    url: "https://msgscan.com",
+    siteName: "Msgscan",
+    images: [
+      {
+        url: "https://msgscan.com/SEO-Image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Msgscan preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Msgscan",
+    description: "The Telegraph Network Explorer",
+    images: ["https://msgscan.com/SEO-Image.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +49,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} font-sans antialiased`}>
         <Providers>
+          <Toaster richColors />
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"

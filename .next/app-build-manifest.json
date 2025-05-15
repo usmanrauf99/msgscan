@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/(pages)/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/(pages)/contact/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,20 +16,40 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/(pages)/contact/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/contact/page.js"
+      "static/chunks/app/_not-found/page.js"
     ],
-    "/(pages)/analytics/page": [
+    "/(pages)/nodes/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/analytics/page.js"
+      "static/chunks/app/(pages)/nodes/page.js"
     ],
     "/(pages)/ecosystem/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/ecosystem/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/(pages)/address/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/address/[id]/page.js"
+    ],
+    "/(pages)/transactions/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/transactions/[id]/page.js"
+    ],
+    "/(pages)/analytics/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/analytics/page.js"
     ]
   }
 }

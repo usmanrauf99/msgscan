@@ -17,7 +17,7 @@ export function Hero() {
       <Container>
         <div className="relative z-10 text-center">
           <h1 className="sm:text-4xl text-2xl font-bold mb-10">
-            The Telegraph Network <span className="text-primary">Explorer</span>
+            The <span className="text-primary">Telegraph</span> Network Explorer
           </h1>
 
           <div className="max-w-lg mx-auto relative">

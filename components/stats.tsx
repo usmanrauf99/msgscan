@@ -26,13 +26,7 @@ export function Stats() {
           />
         </div>
         <span className="text-2xl font-bold">
-          {isLoadingNetworkStats ? (
-            <Skeleton className="h-8" />
-          ) : (
-            formatNumber(networkStats?.nodeVolume || 0, {
-              abbreviate: true,
-            })
-          )}
+          {isLoadingNetworkStats ? <Skeleton className="h-8" /> : 99}
         </span>
         <span className="text-muted-foreground">
           total nodes on the network

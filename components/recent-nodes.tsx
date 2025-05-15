@@ -61,74 +61,62 @@ export function RecentNodes() {
           ) : (
             <div className="flex flex-col text-sm text-card-foreground">
               {lifetimeData?.nextValidatorToSubmitTransaction && (
-                <Link
-                  href={`/validators/${lifetimeData.nextValidatorToSubmitTransaction}`}
-                  key="next-validator"
-                >
-                  <div className="flex flex-row gap-1 items-center h-14 border-b px-5 hover:bg-secondary transition-all duration-100 bg-primary/5">
-                    <div className="flex flex-row gap-2 items-center w-2/6">
-                      <div className="w-7 h-7 flex items-center justify-center bg-primary/20 rounded-md">
-                        <ClockArrowUp className="h-4 w-4 text-primary" />
-                      </div>
-                      <span
-                        className="truncate"
-                        title={lifetimeData.nextValidatorToSubmitTransaction}
-                      >
-                        <HashLink
-                          hash={lifetimeData.nextValidatorToSubmitTransaction}
-                          type="address"
-                          color="primary"
-                          sliceLength={6}
-                        />
-                      </span>
+                <div className="flex flex-row gap-1 items-center h-14 border-b px-5 hover:bg-secondary transition-all duration-100 bg-primary/5">
+                  <div className="flex flex-row gap-2 items-center w-2/6">
+                    <div className="w-7 h-7 flex items-center justify-center bg-primary/20 rounded-md">
+                      <ClockArrowUp className="h-4 w-4 text-primary" />
                     </div>
-                    <span className="w-2/6 text-secondary-foreground/70 flex lg:justify-end">
-                      -
-                    </span>
-                    <span className="w-1/6  flex lg:justify-end">-</span>
-                    <span className="w-1/6  flex lg:justify-end lg:pr-1">
-                      -
+                    <span
+                      className="truncate"
+                      title={lifetimeData.nextValidatorToSubmitTransaction}
+                    >
+                      <HashLink
+                        hash={lifetimeData.nextValidatorToSubmitTransaction}
+                        type="address"
+                        color="primary"
+                        sliceLength={6}
+                      />
                     </span>
                   </div>
-                </Link>
+                  <span className="w-2/6 text-secondary-foreground/70 flex lg:justify-end">
+                    -
+                  </span>
+                  <span className="w-1/6  flex lg:justify-end">-</span>
+                  <span className="w-1/6  flex lg:justify-end lg:pr-1">-</span>
+                </div>
               )}
 
               {validatorsData?.validators.map((validator) => (
-                <Link
-                  href={`/validators/${validator.address}`}
-                  key={validator.address}
-                >
-                  <div className="flex flex-row gap-1 items-center h-14 border-b px-5 hover:bg-secondary transition-all duration-100">
-                    <div className="flex flex-row gap-2 items-center w-2/6">
-                      <div className="w-7 h-7 flex items-center justify-center bg-muted rounded-md">
-                        <WorkflowIcon className="h-4 w-4 text-muted-foreground" />
-                      </div>
-                      <span className="truncate" title={validator.address}>
-                        <HashLink
-                          hash={validator.address}
-                          type="address"
-                          color="regular-foreground"
-                          sliceLength={6}
-                        />
-                      </span>
+                <div className="flex flex-row gap-1 items-center h-14 border-b px-5 hover:bg-secondary transition-all duration-100">
+                  <div className="flex flex-row gap-2 items-center w-2/6">
+                    <div className="w-7 h-7 flex items-center justify-center bg-muted rounded-md">
+                      <WorkflowIcon className="h-4 w-4 text-muted-foreground" />
                     </div>
-                    <span className="w-2/6 text-secondary-foreground/70 flex lg:justify-end">
-                      <div className="px-2.5 py-0.5 rounded-full border w-fit text-sm">
-                        {formatNumber(validator.tokensMined, {
-                          abbreviate: true,
-                          etherConverter: true,
-                        })}{" "}
-                        MSG
-                      </div>
-                    </span>
-                    <span className="w-1/6 lg:flex lg:justify-end">
-                      {formatNumber(validator.transactionsSigned)}
-                    </span>
-                    <span className="w-1/6 flex lg:justify-end lg:pr-1">
-                      {formatNumber(validator.transactionsSubmitted)}
+                    <span className="truncate" title={validator.address}>
+                      <HashLink
+                        hash={validator.address}
+                        type="address"
+                        color="regular-foreground"
+                        sliceLength={6}
+                      />
                     </span>
                   </div>
-                </Link>
+                  <span className="w-2/6 text-secondary-foreground/70 flex lg:justify-end">
+                    <div className="px-2.5 py-0.5 rounded-full border w-fit text-sm">
+                      {formatNumber(validator.tokensMined, {
+                        abbreviate: true,
+                        etherConverter: true,
+                      })}{" "}
+                      MSG
+                    </div>
+                  </span>
+                  <span className="w-1/6 lg:flex lg:justify-end">
+                    {formatNumber(validator.transactionsSigned)}
+                  </span>
+                  <span className="w-1/6 flex lg:justify-end lg:pr-1">
+                    {formatNumber(validator.transactionsSubmitted)}
+                  </span>
+                </div>
               ))}
             </div>
           )}

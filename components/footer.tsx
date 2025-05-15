@@ -84,7 +84,7 @@ export function Footer() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col gap-2 justify-between border-t text-sm py-10 md:items-start items-center">
-            <span>© 2024 Msgscan. All rights reserved.</span>
+            <span>© 2025 Msgscan. All rights reserved.</span>
             <div className="flex flex-row gap-6">
               <Link href="/terms-of-service" className="footer-link-2">
                 Terms of Service
