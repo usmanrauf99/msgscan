@@ -47,7 +47,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-//import { useRouter } from "next/navigation";
 import { useStatus } from "@/hooks/use-status";
 import { useValidatorDetail } from "@/hooks/use-validator-detail";
 import { formatNumber } from "@/utils/number-formatter";
@@ -83,7 +82,6 @@ export function DataTable({
   const [columnVisibility, setColumnVisibility] =
     React.useState<VisibilityState>({});
   const [rowSelection, setRowSelection] = React.useState({});
-  //const router = useRouter();
 
   const { data: statusData, isLoading: isStatusLoading } = useStatus();
   const { data: validatorData, isLoading: isValidatorLoading } =
