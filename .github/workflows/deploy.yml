@@ -48,6 +48,7 @@ jobs:
           port: 22
           script: |
             cd /var/www/nextjs-app
+            find . -mindepth 1 ! -name '.env' -exec rm -rf {} +
             unzip -o deploy.zip
             rm deploy.zip
             
