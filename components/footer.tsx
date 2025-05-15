@@ -12,13 +12,7 @@ export function Footer() {
           <div className="flex md:flex-row flex-col justify-between py-10 md:items-start items-center gap-4">
             <div className="flex flex-col gap-7 items-center md:items-start">
               <Logo />
-              <div className="flex flex-row gap-3">
-                <Link href="/contact">
-                  <Button variant="outline" size="md">
-                    Contact Us
-                  </Button>
-                </Link>
-              </div>
+
               <div className="flex flex-row gap-2">
                 {/* <Button variant="social" size="social">
                   <Image
@@ -79,9 +73,7 @@ export function Footer() {
                 <Link href="/analytics" className="footer-link">
                   Analytics
                 </Link>
-                <Link href="/about" className="footer-link">
-                  About Us
-                </Link>
+
                 <Link href="#" className="footer-link">
                   Documentation
                 </Link>
@@ -92,7 +84,7 @@ export function Footer() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col gap-2 justify-between border-t text-sm py-10 md:items-start items-center">
-            <span>© 2024 Telegraph. All rights reserved.</span>
+            <span>© 2024 Msgscan. All rights reserved.</span>
             <div className="flex flex-row gap-6">
               <Link href="/terms-of-service" className="footer-link-2">
                 Terms of Service

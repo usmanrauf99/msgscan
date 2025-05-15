@@ -65,7 +65,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "500",
     status: "Secured",
     volume: "1000",
-    purchase_price: "600",
+    purchase_price: "2000",
   },
   {
     node_id: "2",
@@ -73,7 +73,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "200",
     status: "Secured",
     volume: "400",
-    purchase_price: "646.33232",
+    purchase_price: "2156",
   },
   {
     node_id: "3",
@@ -81,7 +81,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "250",
     status: "Secured",
     volume: "2300",
-    purchase_price: "696.52",
+    purchase_price: "2323",
   },
   {
     node_id: "4",
@@ -89,7 +89,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "250",
     status: "Secured",
     volume: "2300",
-    purchase_price: "984",
+    purchase_price: "2504",
   },
   {
     node_id: "5",
@@ -97,7 +97,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "500",
     status: "Secured",
     volume: "1000",
-    purchase_price: "1023.23",
+    purchase_price: "2699",
   },
   {
     node_id: "6",
@@ -105,7 +105,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1474",
+    purchase_price: "2909",
   },
   {
     node_id: "7",
@@ -113,7 +113,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1523",
+    purchase_price: "3135",
   },
   {
     node_id: "8",
@@ -121,7 +121,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1974.3",
+    purchase_price: "3379",
   },
   {
     node_id: "9",
@@ -129,7 +129,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2023",
+    purchase_price: "3642",
   },
   {
     node_id: "10",
@@ -137,7 +137,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2474",
+    purchase_price: "3926",
   },
   {
     node_id: "11",
@@ -145,7 +145,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3974",
+    purchase_price: "4231",
   },
   {
     node_id: "12",
@@ -153,7 +153,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3974",
+    purchase_price: "4561",
   },
   {
     node_id: "13",
@@ -161,7 +161,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1500.50",
+    purchase_price: "4915",
   },
   {
     node_id: "14",
@@ -169,7 +169,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1750.75",
+    purchase_price: "5298",
   },
   {
     node_id: "15",
@@ -177,7 +177,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1100.25",
+    purchase_price: "5710",
   },
   {
     node_id: "16",
@@ -185,7 +185,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1300.80",
+    purchase_price: "6155",
   },
   {
     node_id: "17",
@@ -193,7 +193,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1400.50",
+    purchase_price: "6634",
   },
   {
     node_id: "18",
@@ -201,7 +201,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1550.75",
+    purchase_price: "7150",
   },
   {
     node_id: "19",
@@ -209,7 +209,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1600.30",
+    purchase_price: "7706",
   },
   {
     node_id: "20",
@@ -217,7 +217,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1800.60",
+    purchase_price: "8306",
   },
   {
     node_id: "21",
@@ -225,7 +225,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "1950.90",
+    purchase_price: "8952",
   },
   {
     node_id: "22",
@@ -233,7 +233,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2000.10",
+    purchase_price: "9649",
   },
   {
     node_id: "23",
@@ -241,7 +241,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2100.15",
+    purchase_price: "10400",
   },
   {
     node_id: "24",
@@ -249,7 +249,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2200.20",
+    purchase_price: "11209",
   },
   {
     node_id: "25",
@@ -257,7 +257,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2300.25",
+    purchase_price: "12081",
   },
   {
     node_id: "26",
@@ -265,7 +265,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2600.30",
+    purchase_price: "13021",
   },
   {
     node_id: "27",
@@ -273,7 +273,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2700.35",
+    purchase_price: "14034",
   },
   {
     node_id: "28",
@@ -281,7 +281,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2800.40",
+    purchase_price: "15126",
   },
   {
     node_id: "29",
@@ -289,7 +289,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "2900.45",
+    purchase_price: "16304",
   },
   {
     node_id: "30",
@@ -297,7 +297,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3000.50",
+    purchase_price: "17572",
   },
   {
     node_id: "31",
@@ -305,7 +305,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3100.55",
+    purchase_price: "18940",
   },
   {
     node_id: "32",
@@ -313,7 +313,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3200.60",
+    purchase_price: "20413",
   },
   {
     node_id: "33",
@@ -321,7 +321,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3300.65",
+    purchase_price: "22002",
   },
   {
     node_id: "34",
@@ -329,7 +329,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3400.70",
+    purchase_price: "23714",
   },
   {
     node_id: "35",
@@ -337,7 +337,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3500.75",
+    purchase_price: "25559",
   },
   {
     node_id: "36",
@@ -345,7 +345,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3600.80",
+    purchase_price: "27548",
   },
   {
     node_id: "37",
@@ -353,7 +353,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3700.85",
+    purchase_price: "29692",
   },
   {
     node_id: "38",
@@ -361,7 +361,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3800.90",
+    purchase_price: "32003",
   },
   {
     node_id: "39",
@@ -369,7 +369,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "3900.95",
+    purchase_price: "34493",
   },
   {
     node_id: "40",
@@ -377,7 +377,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4000.00",
+    purchase_price: "37177",
   },
   {
     node_id: "41",
@@ -385,7 +385,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4050.60",
+    purchase_price: "40070",
   },
   {
     node_id: "42",
@@ -393,7 +393,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4150.65",
+    purchase_price: "43188",
   },
   {
     node_id: "43",
@@ -401,7 +401,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4250.70",
+    purchase_price: "46549",
   },
   {
     node_id: "44",
@@ -409,7 +409,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4350.75",
+    purchase_price: "50171",
   },
   {
     node_id: "45",
@@ -417,7 +417,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4450.80",
+    purchase_price: "54075",
   },
   {
     node_id: "46",
@@ -425,7 +425,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4550.85",
+    purchase_price: "58283",
   },
   {
     node_id: "47",
@@ -433,7 +433,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4650.90",
+    purchase_price: "62819",
   },
   {
     node_id: "48",
@@ -441,7 +441,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4750.95",
+    purchase_price: "67707",
   },
   {
     node_id: "49",
@@ -449,7 +449,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4850.00",
+    purchase_price: "72976",
   },
   {
     node_id: "50",
@@ -457,7 +457,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "4950.05",
+    purchase_price: "78654",
   },
   {
     node_id: "51",
@@ -465,7 +465,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5050.10",
+    purchase_price: "84775",
   },
   {
     node_id: "52",
@@ -473,7 +473,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5150.15",
+    purchase_price: "91372",
   },
   {
     node_id: "53",
@@ -481,7 +481,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5250.20",
+    purchase_price: "98482",
   },
   {
     node_id: "54",
@@ -489,7 +489,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5350.25",
+    purchase_price: "106146",
   },
   {
     node_id: "55",
@@ -497,7 +497,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5450.30",
+    purchase_price: "114405",
   },
   {
     node_id: "56",
@@ -505,7 +505,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5550.35",
+    purchase_price: "123308",
   },
   {
     node_id: "57",
@@ -513,7 +513,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5650.40",
+    purchase_price: "132903",
   },
   {
     node_id: "58",
@@ -521,7 +521,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5750.45",
+    purchase_price: "143245",
   },
   {
     node_id: "59",
@@ -529,7 +529,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5850.50",
+    purchase_price: "154392",
   },
   {
     node_id: "60",
@@ -537,7 +537,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "5950.55",
+    purchase_price: "166406",
   },
   {
     node_id: "61",
@@ -545,7 +545,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6050.60",
+    purchase_price: "179356",
   },
   {
     node_id: "62",
@@ -553,7 +553,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6150.65",
+    purchase_price: "193312",
   },
   {
     node_id: "63",
@@ -561,7 +561,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6250.70",
+    purchase_price: "208355",
   },
   {
     node_id: "64",
@@ -569,7 +569,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6350.75",
+    purchase_price: "224569",
   },
   {
     node_id: "65",
@@ -577,7 +577,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6450.80",
+    purchase_price: "242044",
   },
   {
     node_id: "66",
@@ -585,7 +585,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6550.85",
+    purchase_price: "260879",
   },
   {
     node_id: "67",
@@ -593,7 +593,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6650.90",
+    purchase_price: "281179",
   },
   {
     node_id: "68",
@@ -601,7 +601,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6750.95",
+    purchase_price: "303060",
   },
   {
     node_id: "69",
@@ -609,7 +609,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6850.00",
+    purchase_price: "326643",
   },
   {
     node_id: "70",
@@ -617,7 +617,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "6950.05",
+    purchase_price: "352061",
   },
   {
     node_id: "71",
@@ -625,7 +625,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7050.10",
+    purchase_price: "379457",
   },
   {
     node_id: "72",
@@ -633,7 +633,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7150.15",
+    purchase_price: "408985",
   },
   {
     node_id: "73",
@@ -641,7 +641,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7250.20",
+    purchase_price: "440810",
   },
   {
     node_id: "74",
@@ -649,7 +649,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7350.25",
+    purchase_price: "475113",
   },
   {
     node_id: "75",
@@ -657,7 +657,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7450.30",
+    purchase_price: "512084",
   },
   {
     node_id: "76",
@@ -665,7 +665,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7550.35",
+    purchase_price: "551933",
   },
   {
     node_id: "77",
@@ -673,7 +673,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7650.40",
+    purchase_price: "594882",
   },
   {
     node_id: "78",
@@ -681,7 +681,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7750.45",
+    purchase_price: "641173",
   },
   {
     node_id: "79",
@@ -689,7 +689,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7850.50",
+    purchase_price: "691067",
   },
   {
     node_id: "80",
@@ -697,7 +697,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "7950.55",
+    purchase_price: "744843",
   },
   {
     node_id: "81",
@@ -705,7 +705,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8050.60",
+    purchase_price: "802804",
   },
   {
     node_id: "82",
@@ -713,7 +713,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8150.65",
+    purchase_price: "865276",
   },
   {
     node_id: "83",
@@ -721,7 +721,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8250.70",
+    purchase_price: "932608",
   },
   {
     node_id: "84",
@@ -729,7 +729,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8350.75",
+    purchase_price: "1005180",
   },
   {
     node_id: "85",
@@ -737,7 +737,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8450.80",
+    purchase_price: "1083400",
   },
   {
     node_id: "86",
@@ -745,7 +745,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8550.85",
+    purchase_price: "1167706",
   },
   {
     node_id: "87",
@@ -753,7 +753,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8650.90",
+    purchase_price: "1258573",
   },
   {
     node_id: "88",
@@ -761,7 +761,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8750.95",
+    purchase_price: "1356510",
   },
   {
     node_id: "89",
@@ -769,7 +769,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8850.00",
+    purchase_price: "1462069",
   },
   {
     node_id: "90",
@@ -777,7 +777,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "8950.05",
+    purchase_price: "1575841",
   },
   {
     node_id: "91",
@@ -785,7 +785,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9050.10",
+    purchase_price: "1698468",
   },
   {
     node_id: "92",
@@ -793,7 +793,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9150.15",
+    purchase_price: "1830636",
   },
   {
     node_id: "93",
@@ -801,7 +801,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9250.20",
+    purchase_price: "1973089",
   },
   {
     node_id: "94",
@@ -809,7 +809,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9350.25",
+    purchase_price: "2126628",
   },
   {
     node_id: "95",
@@ -817,7 +817,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9450.30",
+    purchase_price: "2292114",
   },
   {
     node_id: "96",
@@ -825,7 +825,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9550.35",
+    purchase_price: "2470478",
   },
   {
     node_id: "97",
@@ -833,7 +833,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9650.40",
+    purchase_price: "2662721",
   },
   {
     node_id: "98",
@@ -841,7 +841,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9750.45",
+    purchase_price: "2869925",
   },
   {
     node_id: "99",
@@ -849,7 +849,7 @@ const mockData: Nodes[] = [
     total_msg_claimed: "0",
     status: "Available",
     volume: "0",
-    purchase_price: "9850.50",
+    purchase_price: "3093251",
   },
 ];
 
