@@ -6,7 +6,7 @@ export function PageHero({
   description,
 }: {
   title: string;
-  description: string;
+  description?: string;
 }) {
   return (
     <div className="relative h-[320px] flex items-center justify-center md:-mt-24 -mt-20 md:mb-24 mb-20">
