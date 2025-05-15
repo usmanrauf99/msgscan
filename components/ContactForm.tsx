@@ -130,9 +130,6 @@ export default function ContactForm() {
     <Card className="w-full max-w-3xl mx-auto md:mb-24 mb-20">
       <CardHeader>
         <CardTitle className="text-2xl font-semibold">Contact Us</CardTitle>
-        <CardDescription>
-          Fill out the form below and we'll get back to you as soon as possible.
-        </CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">
