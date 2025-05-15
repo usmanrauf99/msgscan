@@ -103,10 +103,7 @@ export function NavigationBar() {
                 Telegraph Home
               </Button>
             </Link>
-            <Link
-              href="https://github.com/telegraphbridge/Telegraph"
-              target="_blank"
-            >
+            <Link href="#" target="_blank">
               <Button variant="default" className="md:flex hidden" size="md">
                 Build with Telegraph
               </Button>
@@ -180,10 +177,7 @@ export function NavigationBar() {
                       Telegraph Home
                     </Button>
                   </Link>
-                  <Link
-                    href="https://github.com/telegraphbridge/Telegraph"
-                    target="_blank"
-                  >
+                  <Link href="#" target="_blank">
                     <Button variant="default" className="md:flex" size="md">
                       Build with Telegraph
                     </Button>

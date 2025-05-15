@@ -7,7 +7,8 @@ export default function ContactPage() {
     <>
       <PageHero title="Contact" description="" />
       <Container>
-        <ContactForm />
+        <></>
+        {/* <ContactForm /> */}
       </Container>
     </>
   );
