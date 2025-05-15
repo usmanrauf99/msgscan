@@ -113,9 +113,6 @@ export default function ContactForm() {
 
   return (
     <Card className="w-full max-w-3xl mx-auto md:mb-24 mb-20">
-      <CardHeader>
-        <CardTitle className="text-2xl font-semibold">Contact Us</CardTitle>
-      </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
