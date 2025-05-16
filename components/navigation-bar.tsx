@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -26,9 +26,22 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 import { Container } from "@/components/ui/container";
 import { Logo } from "./logo";
 import { ModeToggle } from "./mode-toggle";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@radix-ui/react-select";
 
 type MenuItem = {
   label: string;
@@ -98,24 +111,37 @@ export function NavigationBar() {
             <DesktopMenu />
           </div>
           <div className="flex-1 justify-end hidden lg:flex space-x-3">
-            <Link href="https://telegraphbridge.com/" target="_blank">
-              <Button variant="default" className="md:flex hidden" size="md">
-                Telegraph Home
-              </Button>
-            </Link>
-            <Link href="#" target="_blank">
-              <Button variant="default" className="md:flex hidden" size="md">
-                Build with Telegraph
-              </Button>
-            </Link>
-            <Link
-              href="https://github.com/telegraphbridge/telegraph-subnet"
-              target="_blank"
-            >
-              <Button variant="default" className="md:flex hidden" size="md">
-                Build with Bittensor
-              </Button>
-            </Link>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="outline"
+                  className="flex items-center justify-between w-[80px] rounded-md border border-input bg-background px-3 text-muted-foreground shadow-sm hover:bg-accent hover:text-accent-foreground"
+                >
+                  Build
+                  <ChevronDown className="w-4 h-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link href="https://telegraphbridge.com/" target="_blank">
+                    Telegraph Home
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="#" target="_blank">
+                    Build With Telegraph
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    href="https://github.com/telegraphbridge/telegraph-subnet"
+                    target="_blank"
+                  >
+                    Build with Bittensor
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <ModeToggle />
           </div>
           <div className="flex flex-1 justify-end lg:hidden">
@@ -172,24 +198,40 @@ export function NavigationBar() {
                 </div>
                 <div className="mt-10 flex flex-row flex-wrap w-full items-center gap-3 px-6 py-4 lg:hidden rounded-md">
                   <ModeToggle />
-                  <Link href="https://telegraphbridge.com/" target="_blank">
-                    <Button variant="default" className="md:flex" size="md">
-                      Telegraph Home
-                    </Button>
-                  </Link>
-                  <Link href="#" target="_blank">
-                    <Button variant="default" className="md:flex" size="md">
-                      Build with Telegraph
-                    </Button>
-                  </Link>
-                  <Link
-                    href="https://github.com/telegraphbridge/telegraph-subnet"
-                    target="_blank"
-                  >
-                    <Button variant="default" className="md:flex" size="md">
-                      Build with Bittensor
-                    </Button>
-                  </Link>
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <Button
+                        variant="outline"
+                        className="flex items-center justify-between w-[80px] rounded-md border border-input bg-background px-3 text-muted-foreground shadow-sm hover:bg-accent hover:text-accent-foreground"
+                      >
+                        Build
+                        <ChevronDown className="w-4 h-4" />
+                      </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="https://telegraphbridge.com/"
+                          target="_blank"
+                        >
+                          Telegraph Home
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link href="#" target="_blank">
+                          Build With Telegraph
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="https://github.com/telegraphbridge/telegraph-subnet"
+                          target="_blank"
+                        >
+                          Build with Bittensor
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
                 </div>
               </SheetContent>
             </Sheet>
